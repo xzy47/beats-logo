@@ -1,0 +1,34 @@
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(0);
+let c1 = color(255, 0, 0);
+fill(c1);
+ stroke(255,0,0) 
+  ellipse(200, 200, 200, 200);
+strokeWeight(20);
+stroke(0,0,0)
+ellipse(200, 200, 80, 80);
+stroke(0,0,0)
+line(160, 200, 160, 100)
+strokeWeight(3);
+stroke(255,0,0)
+line(149, 320, 149, 340)
+  noFill() 
+ellipse(157,334,15,15)
+  ellipse(177,334,15,15)
+  line(170,334,184,334)
+  ellipse(197,334,15,15)
+  line(204.5,334,204.5,341)
+  line(213,320,213,338)
+  bezier(213,338,211,342,217,344,216,342)
+  line(213,325,217,325)
+  arc(230,332,13,13,PI,TWO_PI)
+  bezier(223.5,332,225,334,236.5,337,234,337)    
+  translate(230,337)
+  rotate(PI)
+  arc(0,0,13,13,PI,TWO_PI)
+  
+}
