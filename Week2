@@ -1,0 +1,76 @@
+function setup() {
+  createCanvas(640, 438);
+  noStroke();
+  smooth();
+}
+
+function draw() {
+  background(0);
+  noStroke();
+  // red shapes
+  fill(183, 0, 0);
+ quad(0,0,100,0,160,219,0,219);
+ rect(320,378,200,120);
+ rect(320,0,200,150);
+  
+  // yellow shapes
+  fill(255,227,132);
+ quad(0,219,160,219,160,438,0,438)
+  
+  // grey shapes
+  fill(192,192,192);
+ quad(320,150,520,150,520,378,320,378);
+ ellipse(480,140,160,160);
+  
+  // green background
+  fill(3,168,158);
+ quad(160,219,320,219,320,438,160,438);
+ quad(520,219,640,219,640,438,520,438);
+  
+  // blue background
+  fill(25,25,112);
+ quad(100,0,320,0,320,219,160,219);
+  
+  // white shape
+  noFill();
+  strokeWeight(30);
+  stroke(250,255,240)
+ arc(160, 219, 250, 250, HALF_PI, PI);
+ arc(240,219,189,180,QUARTER_PI+HALF_PI,PI+QUARTER_PI);
+  noStroke();
+  fill(250,255,240);
+ arc(360,100,90,90,HALF_PI,PI+HALF_PI,PIE);
+ arc(420,219,80,80,PI,0);
+ arc(520,219,280,280,0,HALF_PI);
+  
+  //blue shapes
+  fill(25,25,112);
+ arc(240,219,155,155,QUARTER_PI,PI+QUARTER_PI);
+  stroke(135,206,235);
+  strokeWeight(30);
+  noFill();
+  ellipse(360,100,120,120);
+  ellipse(420,219,110,110);
+  
+  //black shapes
+  fill(0);
+  noStroke();
+ arc(240,219,155,155,QUARTER_PI+PI,TWO_PI+QUARTER_PI);
+ arc(130,110,155,155,QUARTER_PI+PI,TWO_PI+QUARTER_PI);
+ arc(420,219,80,80,0,PI);
+  
+  //green shapes
+  fill(3,168,158);
+ ellipse(320,100,40,40);
+  stroke(3,168,158);
+  strokeWeight(30);
+  noFill();
+ arc(360,100,120,120,HALF_PI+PI,TWO_PI+QUARTER_PI);
+ arc(420,219,110,110,0,PI+QUARTER_PI);
+  fill(0,201,87);
+  noStroke();
+ ellipse(120,80,40,40);
+ ellipse(445,135,40,40)
+ 
+
+}
